@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NER Memory Match — Cognitive Game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <h1>🧠 NER Memory Match</h1>
+      <p class="subtitle">Adaptive Cognitive Game for Elderly Care</p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span id="score" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Mismatches</span>
+        <span id="mismatches" class="value">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Time</span>
+        <span id="timer" class="value">0s</span>
+      </div>
+      <div class="stat">
+        <span class="label">Difficulty</span>
+        <span id="difficulty" class="value">Level 1</span>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+
+    <div id="game-board" class="game-board"></div>
+
+    <div id="round-message" class="round-message"></div>
+
+    <div class="controls">
+      <button id="restart-btn">Restart Game</button>
+      <input
+        id="patient-id"
+        type="text"
+        placeholder="Patient ID"
+        value="6a9efd1ec11932545373be65"
+      >
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
